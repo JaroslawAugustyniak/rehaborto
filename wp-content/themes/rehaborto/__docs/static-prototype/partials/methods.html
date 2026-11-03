@@ -1,0 +1,17 @@
+<section class="banner banner--small" id="metody">
+  <div class="banner__bg parallax">
+    <img src="{{site.bannerImage}}" alt="Ćwiczenie z obiektywnym pomiarem siły" data-speed="0.2" loading="lazy" />
+  </div>
+  <div class="container">
+    <div class="banner__wrapper">
+      <div class="banner__title">Z czego korzystamy?</div>
+      <h2 class="banner__text">Metody i urządzenia traktujemy jako narzędzia. Nie są celem terapii same w sobie.</h2>
+      <p class="banner__text-small">W zależności od wyniku badania możemy wykorzystywać między innymi terapię manualną, ćwiczenia terapeutyczne i trening siłowy, terapię tkanek miękkich, suche igłowanie, kinesiotaping, falę uderzeniową czy terapię INDIBA.</p>
+      <ul class="tags" aria-label="Wykorzystywane metody">
+        {{#each methods}}<li>{{this}}</li>{{/each}}
+      </ul>
+      <p class="banner__text-small">Jeżeli jest to potrzebne, wykorzystujemy również obiektywne pomiary siły, które pozwalają oceniać różnice między stronami i monitorować postępy terapii.</p>
+      <p class="banner__text-small">Nie każdy pacjent potrzebuje wszystkich tych metod. Dobieramy je wtedy, kiedy mają uzasadnienie i pomagają osiągnąć ustalony cel.</p>
+    </div>
+  </div>
+</section>

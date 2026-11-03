@@ -1,0 +1,24 @@
+<section class="section section--limited contact-section" id="kontakt">
+  <div class="container contact">
+    <div class="contact__info">
+      <div class="main__heading">Kontakt</div>
+      <h2 class="main__title">Chcesz zacząć?</h2>
+      <p class="main__text-small">Rejestracja odbywa się telefonicznie.</p>
+      <ul class="contact__list">
+        <li><span>Telefon:</span> <a href="tel:{{site.phoneHref}}">{{site.phone}}</a></li>
+        <li><span>E-mail:</span> <a href="mailto:{{site.email}}">{{site.email}}</a></li>
+        <li><span>Adres:</span> {{site.address}}, {{site.city}}</li>
+      </ul>
+      <a class="btn" href="tel:{{site.phoneHref}}">Zadzwoń i umów wizytę</a>
+    </div>
+    <div class="contact__map">
+      {{#if site.mapEmbed}}
+      <iframe src="{{site.mapEmbed}}" title="Mapa dojazdu" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      {{else}}
+      <div class="contact__photo parallax">
+        <img src="{{site.contactImage}}" alt="Wnętrze gabinetu" data-speed="0.1" loading="lazy" />
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</section>

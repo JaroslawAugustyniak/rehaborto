@@ -1,0 +1,91 @@
+Najważniejszy wniosek był taki, że strona ma być krótka, prosta i bardzo czytelna. Nie chcieliśmy robić rozbudowanego serwisu z wieloma zakładkami ani katalogu zabiegów. Strona miała prowadzić pacjenta przez kilka naturalnych pytań: czy możecie mi pomóc? jak pracujecie? kto będzie się mną zajmował? ile to kosztuje? jak się umówić?
+Główna idea komunikacyjna była oparta nie na samym bólu, tylko na sprawności. Najbliższe temu było hasło w rodzaju: „Przywracamy sprawność” albo „Pomagamy wrócić do sprawności”. Ustaliliśmy, że ból jest tylko jednym z objawów problemu, a celem fizjoterapii ma być powrót do pracy, codzienności, aktywności lub sportu.
+Ustaliliśmy też kilka konkretnych zasad:
+Pierwszy ekran: duże, jasne, naturalne zdjęcie z gabinetu lub pracy fizjoterapeuty z pacjentem, krótki mocny nagłówek, 1–2 zdania wyjaśnienia i bardzo widoczny numer telefonu / przycisk „Umów wizytę” lub „Zadzwoń”.
+W czym możemy pomóc: zamiast suchej listy usług chcieliśmy pokazać sytuacje, w których pacjent może się odnaleźć: powrót po operacji ortopedycznej, po urazie, zespoły bólowe, sport i aktywność oraz fizjoterapia stomatologiczna.
+Sposób pracy / „Droga do sprawności”: rozmowa i wywiad → dokładne badanie układu ruchu → wyjaśnienie problemu → indywidualny plan → terapia i ćwiczenia → powrót do sprawności.
+Metody terapii: mają być pokazane jako narzędzia, a nie jako główny produkt. Czyli terapia manualna, ćwiczenia terapeutyczne, suche igłowanie, kinesiotaping, fala uderzeniowa, INDIBA itd. — ale z jasnym komunikatem, że dobieracie je wtedy, gdy mają uzasadnienie w konkretnym przypadku.
+Zespół: osobna sekcja z ludźmi. Przy każdym fizjoterapeucie nie długa lista kursów, tylko przede wszystkim: kim jest, w czym pomaga i z jakimi pacjentami najczęściej pracuje.
+Cennik: uznaliśmy, że warto podać ceny. Nie jako samą liczbę, ale z krótką informacją, co obejmuje wizyta. To ma zmniejszać niepewność pacjenta przed telefonem.
+Kontakt: rejestracja przede wszystkim telefoniczna, ale na stronie również e-mail, adres, mapa i łatwy dostęp do numeru telefonu.
+Styl wizualny: dużo białej przestrzeni, jasne wnętrza, czyste zdjęcia, naturalni ludzie, nowoczesna i spokojna estetyka. Bez przeładowania sprzętem i bez typowej „medycznej” strony pełnej ikon i tekstu.
+Ton: profesjonalny, ale normalny i zrozumiały. Bez przesadnego marketingu i bez stawiania się w opozycji do innych gabinetów.
+Bardzo ważne było też to, czego nie chcieliśmy. Odrzuciliśmy sekcję typu „dlaczego jesteśmy lepsi od innych” albo „czym różnimy się od konkurencji”. Chciałeś, żeby jakość waszej pracy wynikała z tego, jak opisujecie swoje standardy, a nie z porównywania się z innymi.
+Docelowo układ strony widzieliśmy mniej więcej tak:
+Pierwszy ekran → W czym możemy pomóc → Jak pracujemy / Droga do sprawności → Metody, których używamy → Zespół → Cennik → Kontakt.
+I cały czas przyświecała temu jedna myśl: to ma być strona o pacjencie i jego powrocie do sprawności, a nie strona o sprzęcie, zabiegach i nas samych.
+Myślę, że teraz jesteśmy już na takim etapie, że zamiast znów wymyślać koncepcję od początku, mogę od razu napisać finalną treść całej strony sekcja po sekcji w wersji gotowej do wysłania osobie, która ją zrobi.
+Rafał
+Przywracamy sprawność
+Pomagamy wrócić do ruchu, pracy, sportu i codziennych aktywności, które są dla Ciebie ważne.
+Naszą pracę opieramy na dokładnym wywiadzie i badaniu układu ruchu. Na tej podstawie wspólnie określamy cel i dobieramy terapię do Twojego problemu, możliwości i potrzeb.
+[Zadzwoń i umów wizytę]
+[tel. …………………]
+Tu: duże, jasne, naturalne zdjęcie fizjoterapeuty pracującego z pacjentem albo dobre zdjęcie sali.
+W CZYM MOŻEMY CI POMÓC?
+Nie musisz wiedzieć, jak nazywa się Twój problem ani jakiej terapii potrzebujesz. To naszym zadaniem jest go dokładnie zbadać i zaplanować dalsze postępowanie.
+Wracasz do sprawności po operacji?
+Prowadzimy fizjoterapię po operacjach ortopedycznych. Pomagamy stopniowo odzyskać ruch, siłę i funkcję oraz bezpiecznie wrócić do codziennej aktywności, pracy lub sportu.
+Jesteś po urazie lub kontuzji?
+Pomagamy w powrocie do sprawności po urazach mięśni, ścięgien, więzadeł i stawów. Oceniamy aktualne możliwości i krok po kroku przygotowujemy organizm do ponownego obciążania.
+Ból ogranicza Twoją aktywność?
+Ból może mieć wiele przyczyn i nie zawsze miejsce, które boli, jest jedynym źródłem problemu. Dlatego zaczynamy od badania i oceny funkcji, a dopiero później planujemy terapię.
+Naszym celem nie jest wyłącznie zmniejszenie dolegliwości, ale odzyskanie możliwie pełnej sprawności.
+Chcesz wrócić do sportu?
+Pracujemy z osobami aktywnymi fizycznie i sportowcami. Pomagamy wrócić do treningu po urazach, poprawić funkcję i siłę oraz przygotować ciało do obciążeń charakterystycznych dla konkretnej dyscypliny.
+Potrzebujesz fizjoterapii stomatologicznej?
+Pomagamy osobom z dolegliwościami w obrębie stawów skroniowo-żuchwowych i narządu żucia, między innymi przy bólu, nadmiernym napięciu mięśni, ograniczeniu otwierania ust czy dolegliwościach związanych z przeciążeniem tej okolicy.
+Nie wiesz, czy możemy Ci pomóc? Zadzwoń. Porozmawiamy i podpowiemy, od czego najlepiej zacząć.
+JAK PRACUJEMY?
+Najpierw chcemy zrozumieć problem. Dopiero później wybieramy terapię.
+Każdy pacjent trafia do nas z inną historią, innymi potrzebami i innym celem. Dlatego nie chcemy pracować według jednego schematu.
+Podstawą naszej pracy jest rozmowa oraz możliwie dokładne badanie układu ruchu. Oceniamy ruch, funkcję, siłę i inne elementy, które mogą mieć znaczenie w danym przypadku.
+Na tej podstawie określamy problem, ustalamy cel i wspólnie planujemy dalsze postępowanie.
+Terapia nie jest dla nas zbiorem przypadkowych zabiegów. Każdy jej element powinien mieć swoje uzasadnienie i prowadzić do konkretnego celu.
+TWOJA DROGA DO SPRAWNOŚCI
+Rozmawiamy. Poznajemy Twój problem, jego historię, wcześniejsze leczenie, poziom aktywności oraz to, do czego chcesz wrócić.
+Badamy. Oceniamy układ ruchu, funkcję, zakres ruchu, siłę oraz elementy istotne dla Twojego problemu.
+Wyjaśniamy. Omawiamy z Tobą wyniki badania i tłumaczymy, co może być źródłem ograniczeń oraz nad czym warto pracować.
+Planujemy i działamy. Dobieramy terapię oraz ćwiczenia do aktualnych możliwości i regularnie oceniamy postępy.
+Wracasz do sprawności. Stopniowo zwiększamy wymagania tak, aby przygotować Cię do tego, co jest Twoim celem — codzienności, pracy, aktywności fizycznej lub sportu.
+Każdy etap terapii ma swój cel.
+Z CZEGO KORZYSTAMY?
+Metody i urządzenia traktujemy jako narzędzia. Nie są celem terapii same w sobie.
+W zależności od wyniku badania możemy wykorzystywać między innymi terapię manualną, ćwiczenia terapeutyczne i trening siłowy, terapię tkanek miękkich, suche igłowanie, kinesiotaping, falę uderzeniową czy terapię INDIBA.
+Jeżeli jest to potrzebne, wykorzystujemy również obiektywne pomiary siły, które pozwalają oceniać różnice między stronami i monitorować postępy terapii.
+Nie każdy pacjent potrzebuje wszystkich tych metod. Dobieramy je wtedy, kiedy mają uzasadnienie i pomagają osiągnąć ustalony cel.
+POZNAJ NASZ ZESPÓŁ
+Fizjoterapia to przede wszystkim praca człowieka z człowiekiem.
+Łączy nas wspólne podejście do pacjenta: uważna rozmowa, dokładne badanie, świadome planowanie terapii i dążenie do odzyskania możliwie pełnej sprawności.
+Każdy z nas ma również obszary, w których pracuje szczególnie często. Dzięki temu możemy dopasować terapeutę do potrzeb konkretnego pacjenta.
+[Imię i nazwisko]
+Fizjoterapeuta
+Najczęściej pracuje z: [np. pacjentami ortopedycznymi, sportowcami, pacjentami pooperacyjnymi].
+W pracy szczególnie interesuje się: [2–3 najważniejsze obszary].
+[Poznaj terapeutę / Umów wizytę]
+Taki sam krótki profil dla każdego członka zespołu. Nie robiłbym na stronie głównej wielkiej listy kursów i certyfikatów.
+CENNIK
+Wiesz, ile kosztuje wizyta, zanim ją umówisz.
+Fizjoterapia — [___ zł]
+Czas wizyty: około [50–60 minut].
+Wizyta może obejmować wywiad, badanie, omówienie problemu, terapię oraz ćwiczenia — w zależności od tego, czego potrzebujesz na danym etapie.
+INDIBA — [___ zł]
+Fala uderzeniowa — [___ zł]
+[Pozostałe pozycje cennika.]
+Nie wiesz, jaką wizytę wybrać? Zadzwoń. Pomożemy Ci wybrać odpowiednią formę wizyty.
+KONTAKT
+Chcesz zacząć?
+Rejestracja odbywa się telefonicznie.
+Telefon: [numer telefonu]
+E-mail: [adres e-mail]
+Adres: [adres gabinetu], Skierniewice
+[ZADZWOŃ I UMÓW WIZYTĘ]
+Tu mapa Google oraz ewentualnie zdjęcie wejścia do gabinetu.
+STOPKA
+[Nazwa gabinetu / logo]
+Fizjoterapia ortopedyczna i sportowa • Fizjoterapia pooperacyjna • Fizjoterapia stomatologiczna
+[telefon] | [e-mail] | [adres]
+Menu strony
+Na górze zostawiłbym naprawdę proste menu:
+W czym pomagamy | Jak pracujemy | Zespół | Cennik | Kontakt
+oraz po prawej wyraźny przycisk „Zadzwoń / Umów wizytę”.

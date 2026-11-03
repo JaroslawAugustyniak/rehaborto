@@ -1,0 +1,156 @@
+/* ---------- Pasek górny + nawigacja (jak top-wrapper w źródle) ---------- */
+.top-wrapper {
+  /* górny pasek wyjeżdża ze strony razem ze scrollem, a menu zostaje przyklejone (bez zmiany wysokości = bez drgania) */
+  position: sticky; top: calc(-1 * var(--top-h)); z-index: 500;
+  background: var(--c-white);
+  border-bottom: 1px solid var(--c-line);
+}
+.top { height: var(--top-h); }
+
+.top__wrapper { display: flex; align-items: center; justify-content: space-between; height: 100%; gap: 1.5rem; }
+.top__logo { display: flex; align-items: center; gap: .75rem; font-size: 1.35rem; font-weight: 700; color: var(--c-navy); text-decoration: none; }
+.top__logo img { height: 52px; width: auto; transition: height .3s; }
+.top__contacts { display: flex; align-items: center; gap: 2rem; }
+.top__contacts-item { line-height: 1.35; }
+.top__action {
+  display: grid; place-items: center;
+  width: 48px; height: 48px;
+  background: var(--grad-accent); color: var(--c-white);
+  font-size: 1.4rem;
+  transition: background .25s;
+}
+.top__action:hover { background: var(--grad-navy); color: var(--c-white); }
+.top__contacts-item-top { display: flex; align-items: center; font-size: .875rem; color: var(--c-muted); }
+.top__contacts-item-top .ico { color: var(--c-accent); margin-right: .5rem; font-size: 1rem; }
+.top__contacts-item-bottom { font-weight: 600; font-size: .95rem; }
+.top__contacts-item-bottom a { color: var(--c-dark); text-decoration: none; }
+.top__contacts-item-bottom a:hover { color: var(--c-accent-dark); }
+
+.navigation { background: var(--c-dark); }
+/* menu z wp_nav_menu(): <nav class="nav"><ul class="menu"><li class="menu-item"><a> */
+.nav .menu { display: flex; gap: 2.25rem; margin: 0; padding: 0; list-style: none; }
+.nav .menu a {
+  display: block; line-height: var(--nav-h);
+  color: var(--c-white); text-decoration: none;
+  font-size: .875rem; font-weight: 500; letter-spacing: .5px; text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  transition: color .2s, border-color .2s;
+}
+.nav .menu a:hover,
+.nav .menu a:focus-visible { color: var(--c-accent-light); border-bottom-color: var(--c-accent-light); }
+
+.top__toggle { display: none; background: none; border: 0; padding: .75rem; cursor: pointer; }
+.top__burger, .top__burger::before, .top__burger::after {
+  display: block; width: 26px; height: 2px; background: var(--c-dark); content: ''; position: relative;
+}
+.top__burger::before { position: absolute; top: -8px; }
+.top__burger::after { position: absolute; top: 8px; }
+
+@media (max-width: 1100px) { .hidden-md { display: none; } }
+@media (max-width: 900px)  { .hidden-sm { display: none; } }
+@media (max-width: 760px) {
+  :root { --top-h: 68px; }
+  .top__toggle { display: block; }
+  .top__contacts { margin-left: auto; }
+  .top-wrapper { top: 0; }   /* na telefonie hamburger ma zostać widoczny */
+  .navigation { display: none; }
+  .navigation.is-open { display: block; }
+  .nav { width: 100%; }
+  .nav .menu { flex-direction: column; gap: 0; padding: .5rem 0; }
+  .nav .menu a { border-bottom: 0; line-height: 3rem; }
+}
+
+/* ---------- Sekcje ---------- */
+.section { padding: clamp(3rem, 7vw, 6rem) 0; }
+.section--first { padding-top: clamp(2rem, 4vw, 3rem); }
+.section--white { background: var(--c-white); }
+.section--limited { background: var(--grad-soft); }
+.section__head { max-width: 800px; margin: 0 auto clamp(2rem, 4vw, 3.5rem); }
+
+/* ---------- Banery (hero i pas z metodami) ---------- */
+.banner {
+  position: relative;
+  background: var(--c-dark);   /* jednolite tło poza obrazem na bardzo szerokich ekranach */
+  color: var(--c-white);
+}
+/* obraz i nakładka mają maksymalną szerokość i są wyśrodkowane (--banner-max) */
+.banner__bg, .banner::before {
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+  max-width: var(--banner-max); margin-inline: auto;
+}
+.banner::before {
+  content: ''; z-index: 1;
+  background: linear-gradient(90deg, rgba(14, 42, 99, 1) 0%, rgba(22, 65, 148, .3) 40%, rgba(22, 65, 148, 0) 100%);
+}
+.banner > .container { position: relative; z-index: 2; }
+.banner--hero { padding: clamp(4rem, 11vw, 9rem) 0; }
+.banner--small { padding: clamp(3.5rem, 8vw, 6rem) 0; }
+.banner__wrapper { max-width: 42.5rem; }
+.banner__title {
+  margin-bottom: .625rem;
+  font-size: .8125rem; font-weight: 500; letter-spacing: 1.2px; text-transform: uppercase;
+  color: var(--c-accent-light);
+}
+.banner__text {
+  margin: 0 0 1rem;
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  font-weight: 600; line-height: 1.1; letter-spacing: -.01em;
+}
+.banner--small .banner__text { font-size: clamp(1.5rem, 3.4vw, 2.3rem); line-height: 1.25; letter-spacing: 0; }
+.banner__lead { font-size: 1.3rem; font-weight: 500; }
+.banner__text-small, .banner__content p { color: rgba(255, 255, 255, .85); }
+.banner__action { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; margin-top: 2rem; }
+.banner__phone { color: var(--c-white); font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+.banner__phone:hover { color: var(--c-accent-light); }
+
+/* ---------- Stopka ---------- */
+.footer { background: var(--c-dark); color: #b7c3dc; }
+.footer__top { padding: clamp(2.5rem, 5vw, 4rem) 0; }
+.footer__cols { display: grid; grid-template-columns: .7fr 1fr 1fr 1.3fr; gap: 3rem; }
+.footer__title { margin-bottom: 1rem; color: var(--c-white); font-weight: 600; letter-spacing: .5px; text-transform: uppercase; font-size: .875rem; }
+.footer ul { list-style: none; }
+.footer li { margin-bottom: .4rem; }
+.footer a { color: #b7c3dc; text-decoration: none; }
+.footer a:hover { color: var(--c-accent-light); }
+.footer p { margin-bottom: .5rem; }
+.footer__bottom { padding: 1.25rem 0; background: #091d4b; font-size: .875rem; }
+.footer__copy { margin: 0; }
+@media (max-width: 767px) { 
+  .banner::before {
+    background: linear-gradient(90deg, rgba(22, 65, 148, 1) 0%, rgba(22, 65, 148, .3) 65%, rgba(22, 65, 148, 0) 100%);
+  }
+ }
+@media (max-width: 800px) { .footer__cols { grid-template-columns: 1fr; gap: 2rem; } }
+
+.footer__logo { height: 72px; width: auto; margin-bottom: 1rem; filter: brightness(0) invert(1); }
+
+/* ---------- Logo i telefon w przyklejonym pasku menu (po wyjechaniu .top) ---------- */
+.navigation__inner { display: flex; align-items: center; }
+.navigation__logo, .navigation__phone {
+  flex: none; overflow: hidden; opacity: 0; max-width: 0; pointer-events: none;
+  transition: max-width .3s ease, opacity .3s ease, margin .3s ease;
+}
+.navigation__logo { display: block; }
+.navigation__logo img { height: 36px; width: auto; filter: brightness(0) invert(1); }
+.navigation__phone {
+  display: grid; place-items: center;
+  width: var(--nav-h); height: var(--nav-h); margin-left: auto;
+  background: var(--grad-accent); color: var(--c-white); font-size: 1.25rem;
+}
+.navigation__phone:hover { background: var(--grad-navy); color: var(--c-white); }
+.top-wrapper.is-stuck .navigation__logo { max-width: 40px; opacity: 1; margin-right: 2rem; pointer-events: auto; }
+.top-wrapper.is-stuck .navigation__phone { max-width: var(--nav-h); opacity: 1; pointer-events: auto; }
+@media (max-width: 760px) { .navigation__logo, .navigation__phone { display: none; } }
+
+/* mobile (<768px): w górnym pasku zostaje samo logo i hamburger */
+@media (max-width: 767px) {
+  .top__contacts,
+  .top__logo span { display: none; }
+}
+
+/* ---------- Pasek administratora WordPressa (zalogowany użytkownik) ---------- */
+.admin-bar .top-wrapper { top: calc(32px - var(--top-h)); }
+@media (max-width: 782px) { .admin-bar .top-wrapper { top: calc(46px - var(--top-h)); } }
+@media (max-width: 760px) { .admin-bar .top-wrapper { top: 46px; } }
+
+.container--content { max-width: 800px; }

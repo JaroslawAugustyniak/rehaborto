@@ -1,0 +1,31 @@
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container footer__cols">
+      <div class="footer__divider">
+        <img class="footer__logo" src="/images/logo.svg" alt="" width="56" height="72" />
+        <div class="footer__title">{{site.name}}</div>
+        <p>{{site.tagline}}</p>
+      </div>
+      <div class="footer__divider">
+        <div class="footer__title">Menu</div>
+        <ul>
+          {{#each menu}}<li><a href="{{href}}">{{label}}</a></li>{{/each}}
+        </ul>
+      </div>
+      <div class="footer__divider">
+        <div class="footer__title">Skontaktuj się z nami</div>
+        <p><a href="tel:{{site.phoneHref}}">{{site.phone}}</a></p>
+        <p><a href="mailto:{{site.email}}">{{site.email}}</a></p>
+        <p>{{site.address}}, {{site.city}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <p class="footer__copy">{{site.copyright}} © {{site.name}}</p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="fixed-item" aria-label="Wróć na górę strony" title="Wróć na górę" data-scroll-top>
+  <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>

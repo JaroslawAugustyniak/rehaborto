@@ -1,0 +1,12 @@
+/*
+Theme Name: Rehaborto
+Theme URI: https://rehaborto.pl
+Author: Rehaborto
+Description: Motyw dla gabinetu fizjoterapii. Jednostronicowa strona; style i skrypty budowane w Vite (katalog src/, wynik w dist/).
+Version: 0.1.0
+Requires at least: 6.0
+Requires PHP: 8.1
+Text Domain: rehaborto
+*/
+
+/* Style strony znajdują się w src/styles/ i są budowane przez Vite (npm run build). */

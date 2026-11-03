@@ -1,0 +1,33 @@
+<section class="section section--first" id="w-czym-pomagamy">
+  <div class="container">
+  <div class="help" data-help data-interval="4500">
+    <div class="help__intro">
+      <div class="main__heading">W czym możemy Ci pomóc?</div>
+      <h2 class="main__title">Nie musisz wiedzieć, jak nazywa się Twój problem ani jakiej terapii potrzebujesz.</h2>
+      <div class="main__text-small">To naszym zadaniem jest go dokładnie zbadać i zaplanować dalsze postępowanie.</div>
+    </div>
+    <div class="help__list">
+      {{#each situations}}
+      <article class="help__item" tabindex="0" aria-expanded="false" data-help-item>
+        <h3 class="help__title">
+          <span>{{title}}</span>
+          <!-- <svg class="help__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> -->
+        </h3>
+        <div class="help__body">
+          <div class="help__body-inner">
+            {{#each text}}<p>{{this}}</p>{{/each}}
+          </div>
+        </div>
+      </article>
+      {{/each}}
+    </div>
+  </div>
+    <div class="help__cta">
+      <div class="help__cta-text">
+        <h3>Nie wiesz, czy możemy Ci pomóc?</h3>
+        <p>Zadzwoń. Porozmawiamy i podpowiemy, od czego najlepiej zacząć.</p>
+      </div>
+      <a class="btn" href="tel:{{site.phoneHref}}">Zadzwoń</a>
+    </div>
+  </div>
+</section>

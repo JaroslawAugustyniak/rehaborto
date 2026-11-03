@@ -1,0 +1,27 @@
+<section class="section section--white" id="jak-pracujemy">
+  <div class="container">
+    <div class="text-center section__head">
+      <div class="main__heading">Jak pracujemy?</div>
+      <h2 class="main__title">Najpierw chcemy zrozumieć problem. Dopiero później wybieramy terapię.</h2>
+    </div>
+    <div class="how__intro">
+      <p>Każdy pacjent trafia do nas z inną historią, innymi potrzebami i innym celem. Dlatego nie chcemy pracować według jednego schematu.</p>
+      <p>Podstawą naszej pracy jest rozmowa oraz możliwie dokładne badanie układu ruchu. Oceniamy ruch, funkcję, siłę i inne elementy, które mogą mieć znaczenie w danym przypadku.</p>
+      <p>Na tej podstawie określamy problem, ustalamy cel i wspólnie planujemy dalsze postępowanie.</p>
+      <p>Terapia nie jest dla nas zbiorem przypadkowych zabiegów. Każdy jej element powinien mieć swoje uzasadnienie i prowadzić do konkretnego celu.</p>
+    </div>
+    <div class="text-center steps__head">
+      <div class="main__heading">Twoja droga do sprawności</div>
+    </div>
+    <ol class="steps">
+      {{#each steps}}
+      <li class="steps__item">
+        <svg class="steps__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{{icon}}}</svg>
+        <strong>{{name}}</strong>
+        <span>{{text}}</span>
+      </li>
+      {{/each}}
+    </ol>
+    <p class="steps__summary text-center">Każdy etap terapii ma swój cel.</p>
+  </div>
+</section>

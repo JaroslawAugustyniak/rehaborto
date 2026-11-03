@@ -1,0 +1,42 @@
+{
+  "site": {
+    "name": "Fizjoterapia ortopedyczna i sportowa",
+    "city": "Skierniewice",
+    "address": "",
+    "phone": "",
+    "phoneHref": "+48000000000",
+    "email": "",
+    "mapEmbed": "",
+    "tagline": "Fizjoterapia ortopedyczna i sportowa",
+    "heroImage": "images/hero.jpg",
+    "bannerImage": "images/pomiary-sily.jpg",
+    "heroEyebrow": "Fizjoterapia • Skierniewice",
+    "copyright": "Wszelkie prawa zastrzeżone",
+    "contactImage": "images/gabinet.jpg"
+  },
+  "menu": [
+    
+  ],
+  "situations": [
+    
+  ],
+  "steps": [
+    
+  ],
+  "methods": [
+    "terapia manualna",
+    "ćwiczenia terapeutyczne i trening siłowy",
+    "terapia tkanek miękkich",
+    "suche igłowanie",
+    "kinesiotaping",
+    "fala uderzeniowa",
+    "terapia INDIBA",
+    "obiektywne pomiary siły"
+  ],
+  "team": [
+    
+  ],
+  "prices": [
+    
+  ]
+}

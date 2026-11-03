@@ -1,0 +1,30 @@
+<section class="section section--limited" id="zespol">
+  <div class="container">
+    <div class="text-center section__head">
+      <div class="main__heading">Poznaj nasz zespół</div>
+      <h2 class="main__title">Fizjoterapia to przede wszystkim praca człowieka z człowiekiem.</h2>
+      <div class="main__text-small">Łączy nas wspólne podejście do pacjenta: uważna rozmowa, dokładne badanie, świadome planowanie terapii i dążenie do odzyskania możliwie pełnej sprawności.</div>
+      <div class="main__text-small">Każdy z nas ma również obszary, w których pracuje szczególnie często. Dzięki temu możemy dopasować terapeutę do potrzeb konkretnego pacjenta.</div>
+    </div>
+    <div class="team">
+      {{#each team}}
+      <article class="person">
+        <div class="person__image parallax">
+          {{#if photo}}
+          <img src="{{photo}}" alt="{{name}}" data-speed="0.1" loading="lazy" />
+          {{else}}
+          <div class="placeholder" role="img" aria-label="Miejsce na zdjęcie terapeuty">Zdjęcie</div>
+          {{/if}}
+        </div>
+        <div class="person__body">
+          <h3>{{name}}</h3>
+          <p class="person__role">{{role}}</p>
+          <p><strong>Najczęściej pracuje z:</strong> {{worksWith}}.</p>
+          <p><strong>W pracy szczególnie interesuje się:</strong> {{interests}}.</p>
+          <a class="btn btn--small" href="tel:{{../site.phoneHref}}">{{cta}}</a>
+        </div>
+      </article>
+      {{/each}}
+    </div>
+  </div>
+</section>

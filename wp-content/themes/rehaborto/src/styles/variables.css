@@ -1,0 +1,25 @@
+/* Paleta wyprowadzona z logo: niebieski #164194 i zieleń #009640 */
+:root {
+  --c-accent: #009640;          /* zieleń z logo */
+  --c-accent-dark: #007a33;     /* zieleń do tekstu na jasnym tle (kontrast) */
+  --c-accent-light: #86dba8;    /* pastelowa zieleń na ciemnym tle */
+  --c-navy: #164194;            /* niebieski z logo */
+  --c-dark: #0e2a63;            /* głęboki granat: menu, stopka */
+  --c-text: #1d2a44;
+  --c-muted: #5d6882;
+  --c-line: #dbe3f0;
+  --c-white: #ffffff;
+
+  --grad-page: linear-gradient(160deg, #ffffff 0%, #eaf2fa 100%);
+  --grad-soft: linear-gradient(160deg, #f4f8fc 0%, #e2f1e9 100%);
+  --grad-dark: linear-gradient(135deg, #0e2a63 0%, #164194 100%);
+  --grad-accent: linear-gradient(135deg, #009640 0%, #1fae5f 100%);
+  --grad-navy: linear-gradient(135deg, #164194 0%, #0e2a63 100%);
+
+  --font: 'Montserrat Variable', 'Montserrat', system-ui, sans-serif;
+  --container: 1200px;
+  --banner-max: 1920px;
+  --gutter: 10px;
+  --top-h: 84px;
+  --nav-h: 52px;
+}

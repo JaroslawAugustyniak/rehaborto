@@ -1,0 +1,137 @@
+/* ---------- Strona fizjoterapeuty (single-team.php) ---------- */
+.therapist__head { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 4rem); align-items: center; }
+.therapist__image { aspect-ratio: 4 / 5; max-height: 640px; }
+.therapist__info { display: flex; flex-direction: column; align-items: flex-start; gap: .5rem; }
+.therapist__back { color: var(--c-muted); font-size: .875rem; text-decoration: none; }
+.therapist__back:hover { color: var(--c-accent-dark); }
+.therapist__name { margin: 0; }
+.therapist__short { margin: .75rem 0 1.5rem; color: var(--c-muted); font-size: 1.0625rem; }
+.therapist__content .container > * + * { margin-top: 1em; }
+@media (max-width: 760px) { .therapist__head { grid-template-columns: 1fr; } .therapist__image { max-height: 420px; } }
+
+/* ---------- "W czym możemy Ci pomóc": tekst + rozwijane boksy ---------- */
+.help { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.help__intro { position: sticky; top: calc(var(--nav-h) + 90px); }
+.help__cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem;
+  margin-top: clamp(1rem, 3vw, 2rem); padding-top: 2rem;
+  border-top: 1px solid var(--c-line);
+}
+.help__cta h3 { font-size: 1.15rem; margin-bottom: .2em; }
+.help__cta p { margin: 0; color: var(--c-muted); }
+
+/* Jeden kontener, boksy po 50% szerokości (minus odstęp), w stanie zwiniętym kwadratowe */
+.help__list { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gutter); align-items: stretch; 
+   }
+
+
+.help__item {
+  position: relative;
+  isolation: isolate;
+  background: var(--c-white);
+  border: 1px solid var(--c-line);
+  color: var(--c-text);
+  cursor: pointer;
+  transition: color .4s ease, border-color .4s ease;
+}
+/* warstwa z gradientem navy (left-top → right-bottom); odwracana przesunięciem tła */
+.help__item::before {
+  content: ''; position: absolute; inset: -1px; z-index: -1;
+  background: linear-gradient(135deg, #164194 0%, #0e2a63 50%, #164194 100%) 0 0 / 200% 200%;
+  opacity: 0;
+  transition: opacity .4s ease, background-position .6s ease;
+}
+/* tło navy tylko dla aktywnego boksu; parzyste mają gradient odwrócony */
+.help__item.is-active { color: var(--c-white); border-color: transparent; }
+.help__item.is-active::before { opacity: 1; background-position: 100% 100%; }
+.help__item:nth-child(even).is-active::before { background-position: 0 0; }
+
+.help__title {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  margin: 0; padding: 1rem 1.5rem;
+  /* aspect-ratio: 1;             boks zwinięty jest kwadratem; tytuł wyśrodkowany w pionie */
+  text-align: left;
+  font-size: 1.4rem;
+}
+.help__item.is-active .help__title { aspect-ratio: auto; }  /* po aktywacji opis wyświetla się bezpośrednio pod tytułem */
+.help__icon { width: 20px; height: 20px; flex: none; transition: transform .35s; }
+.help__item.is-active .help__icon { transform: rotate(45deg); }
+
+.help__body { display: block; }
+.help__body-inner { padding: 0 1.5rem 1.5rem; }
+.help__body p { margin: 0 0 .8em; font-size: .95rem; color: inherit; opacity: .9; }
+.help__body p:last-child { margin-bottom: 0; }
+
+/* opis pokazywany od razu (bez animacji), tylko gdy działa JS; bez JS wszystko jest rozwinięte */
+/* .js .help__body { display: none; } */
+.js .help__item.is-active .help__body { display: block; }
+
+@media (max-width: 620px) { .help__list { grid-template-columns: 1fr;  } }
+@media (max-width: 900px) {
+  .help__list{
+    margin-top:inherit;
+  }
+  .help { grid-template-columns: 1fr; }
+  .help__intro { position: static; }
+}
+
+/* ---------- Jak pracujemy ---------- */
+.how__intro { max-width: 800px; margin: 0 auto; text-align: center; color: var(--c-muted); font-size: 1.0625rem; }
+.steps__head { margin-top: clamp(2.5rem, 5vw, 4rem); }
+.steps {
+  list-style: none; counter-reset: step;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--gutter);
+  margin-top: 1.5rem;
+}
+.steps__item {
+  position: relative;
+  counter-increment: step;
+  display: flex; flex-direction: column; gap: .5rem;
+  padding: 1.75rem 1.5rem;
+  background: var(--grad-soft);
+  border-top: 4px solid var(--c-accent);
+}
+.steps__item::before {
+  content: '0' counter(step);
+  position: absolute; top: 1rem; right: 1.25rem;
+  font-size: 2.25rem; font-weight: 700; line-height: 1; color: var(--c-accent-dark); opacity: .35;
+}
+.steps__icon {
+  width: 64px; height: 64px; padding: 14px; margin-bottom: .75rem;
+  background: var(--grad-accent); color: var(--c-white);
+  transition: background .25s, color .25s;
+}
+.steps__item:hover .steps__icon { background: var(--grad-navy); color: var(--c-accent-light); }
+.steps__item strong { font-size: 1.1rem; font-weight: 600; }
+.steps__item span { color: var(--c-muted); font-size: .95rem; }
+.steps__summary { margin-top: 2rem; font-weight: 600; font-size: 1.15rem; }
+@media (max-width: 1000px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
+
+/* ---------- Zespół (karty jak "news-slider__item") ---------- */
+.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--gutter); justify-content: center; }
+.person { display: flex; flex-direction: column; background: var(--c-white); border: 1px solid var(--c-line); }
+.person__image { aspect-ratio: 4 / 3; }
+.person__body { padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+.person__body h3 { margin-bottom: .1em; font-size: 1.2rem; }
+.person__role { color: var(--c-accent-dark); font-weight: 600; font-size: .875rem; letter-spacing: 1px; text-transform: uppercase; }
+.person__body p:nth-of-type(n+2) { color: var(--c-muted); font-size: .95rem; }
+.person__body .btn { margin-top: auto; }
+
+/* ---------- Cennik ---------- */
+.prices { list-style: none; max-width: 800px; margin: 0 auto; border-top: 1px solid var(--c-line); }
+.price { padding: 1.5rem 0; border-bottom: 1px solid var(--c-line); }
+.price__row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: 1.25rem; font-weight: 600; }
+.price__value { color: var(--c-accent-dark); white-space: nowrap; }
+.price__meta, .price__body p { margin: .4rem 0 0; color: var(--c-muted); font-size: .95rem; }
+.price__cta { margin: 2.5rem 0 0; font-weight: 500; }
+.price__cta p, .steps__summary p { margin: 0; }
+
+/* ---------- Kontakt ---------- */
+.contact { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(2rem, 5vw, 4rem); align-items: stretch; }
+.contact__list { list-style: none; margin: 1.5rem 0 2rem; display: grid; gap: .5rem; }
+.contact__list span { font-weight: 600; }
+.contact__map { min-height: 380px; }
+.contact__photo { height: 100%; min-height: 380px; }
+.contact__map iframe { width: 100%; height: 100%; min-height: 380px; border: 0; }
+@media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
