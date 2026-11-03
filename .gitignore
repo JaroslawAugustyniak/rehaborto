@@ -21,6 +21,8 @@ wp-content/uploads-backups/
 wp-content/uploads-webpc/
 litespeed/
 
+__docs/source/
+
 *.mp4
 
 # plugins – ignore all
